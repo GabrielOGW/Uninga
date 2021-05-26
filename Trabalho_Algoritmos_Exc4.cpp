@@ -1,9 +1,21 @@
 #include <stdio.h>
 
+/*
+Uma pessoa quer fazer uma pesquisa de opinião sobre uma peça de teatro.
+Desenvolva um programa em C para anotar a idade, o sexo (M ou F) e a opinião dos espectadores (S-gostou da peça ou N-não gostou).
+Quando não houver mais pessoas a serem entrevistadas,
+o usuário deverá digitar zero para a idade e o programa deverá mostrar:
+Quantas pessoas foram entrevistadas;
+O percentual de pessoas que gostaram da peça;
+Quantos homens e quantas mulheres participaram da pesquisa;
+E a média de idade dos espectadores.
+*/
+
 main(){
+    //Define as variaveis
     int idade, quantEspec = 0, contM = 0, contF = 0, gostou = 0, naoGostou = 0;
     char sexo, opniao;
-    
+    //Incompleto, dando erro, tentando arrumar
     do{
         printf("Qual a idade de espectador: ");
         scanf("%d",&idade);
