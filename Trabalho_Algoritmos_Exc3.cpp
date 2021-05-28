@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+
 /*Foi feita uma estatística em algumas cidades brasileiras para coletar dados sobre acidentes de trânsito.
 Foram obtidos os seguintes dados: código da cidade, número de veículos de passeio e número de acidentes de trânsito com vítimas. 
 Deseja-se saber: a quantidade de cidades pesquisadas;
@@ -25,7 +26,7 @@ main(){
         scanf("%d",&veiculos);
         printf("Quantos acidentes de transito, com vitimas houve: ");
         scanf("%d",&acidentes);
-//Enquanto pega os dados das cidades vai somando em variaveis que serão usadas depois
+//Enquanto pega os dados das cidades vai somando em variaveis que serão usadas dps
         contCidade++;
         somaVeiculos = somaVeiculos + veiculos;
         if(acidentes > maior){
@@ -42,7 +43,7 @@ main(){
 //calcula a media de veiculos, e media de acidentes em cidades menores
     mediaAcidentes = somaAcidentes/contCidadePequena;
     mediaVeiculos = somaVeiculos / contCidade;
-//apresenta na tela as informações solicitadas
+    //apresenta na tela as informações solicitadas
     printf("\nA quantidade de cidades pesquisadas foram: %d cidades", contCidade);
     printf("\nA cidade com maior número de acidentes, houve: %d acidentes", maior);
     printf("\nA cidade com menor número de acidentes, houve: %d acidentes", menor);
