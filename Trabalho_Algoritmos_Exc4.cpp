@@ -12,32 +12,47 @@ E a média de idade dos espectadores.
 */
 
 main(){
-    //Define as variaveis
-    int idade, quantEspec = 0, contM = 0, contF = 0, gostou = 0, naoGostou = 0;
+    int idade, quantEspec = 0, contM = 0, contF = 0, mediaIdade, somaIdade;
     char sexo, opniao;
-    //Incompleto, dando erro, tentando arrumar
-    do{
-        printf("Qual a idade de espectador: ");
-        scanf("%d",&idade);
+    float porcentagemOpniao, gostou = 0, naoGostou = 0;
+    
+    printf("Qual a idade de espectador: ");
+    scanf("%d",&idade);
         quantEspec++;
-        printf("o sexo do espectador(M ou F): ");
-        scanf("%c",&sexo);
-        if(sexo = "M"){
+    while(idade != 0){
+        /*irá ler a idade colocada fora do while, e também lerá as proxima colocadas no final(exceto 0);
+        feito assim pois se fosse no final do escopo, não leria a primeira idade fora do while*/
+        somaIdade = somaIdade + idade;
+        printf("\nO sexo do espectador(M ou F): ");
+        scanf("%s",&sexo);
+        if(sexo == 'M'){
             contM++;
-        } else if(sexo = "F"){
+        } else if(sexo == 'F'){
             contF++;
-        } else {
-            printf("\nInserir um sexo valido\n");
         }
-        printf("Você gostou ou não gostou do teatro\n(S para gostou ou N para não gostou)\n  ");
-        scanf("%c",opniao);
-        if(opniao = "S"){
+
+        printf("\nVocê gostou ou não gostou do teatro\nS para gostou ou N para não gostou\n");
+        scanf("%s",&opniao);
+        if(opniao == 'S'){
             gostou++;
-        } else if("N"){
+        } else if(opniao == 'N'){
             naoGostou++;
-        } 
-        printf("informe a idade de proximo espectador, ou 0 para encerrar a pesquisa: ");
-        scanf("%d",idade);
-    } while(idade != 0);
-    printf("Mulheres: %d\n homens: %d\n gostou %d\n nao gostou %d\n ", contF, contM, gostou, naoGostou);
+        }
+
+        printf("\nInforme a idade de outro espectador\nOu digite 0 para acabar a pesquisa.\n");
+        scanf("%d",&idade);
+        if(idade != 0){
+            quantEspec++;
+        }
+         
+    }
+    //faz os calculos que foram juntados com as informações dentro do while
+    porcentagemOpniao = (gostou / naoGostou) * quantEspec;
+    mediaIdade = somaIdade / quantEspec;
+    //imprime as informações desejadas no enunciado
+    printf("Quantidade de espectadores entrevistados: %d\n",quantEspec);
+    //Porcentagem ainda apresentando erro na logica, o calculo está errado
+    printf("Porcentagem de pessoas entrevistadas que gostaram da peça: %.2f\n",porcentagemOpniao);
+    printf("Quantidade de Mulheres entrevistadas: %d\nQuantidade de Homens entrevistados: %d\n", contF, contM);
+    printf("A media de idade dos espectadores entrevistados: %d anos\n",mediaIdade);
 }
