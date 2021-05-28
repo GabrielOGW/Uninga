@@ -10,7 +10,7 @@ main(){
     printf("Ate que valor voce deseja ver os numeros pares: ");
     scanf("%d",&valordesejado);
     //ciclo de repetição utilizando o for para imprimir até o valor desejado
-    for(contador = 0; contador < valordesejado; contador += 2){
+    for(contador = 0; contador <= valordesejado; contador += 2){
         printf("%d\n",contador);
     }
     //Informa o usuário que o programa acabou
