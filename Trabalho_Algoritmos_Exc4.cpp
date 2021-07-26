@@ -12,6 +12,7 @@ E a média de idade dos espectadores.
 */
 
 main(){
+    //Define as variaveis:
     int idade, quantEspec = 0, contM = 0, contF = 0, mediaIdade, somaIdade;
     char sexo, opniao;
     float porcentagemOpniao, gostou = 0, naoGostou = 0;
@@ -31,7 +32,7 @@ main(){
             contF++;
         }
 
-        printf("\nVocê gostou ou não gostou do teatro\nS para gostou ou N para não gostou\n");
+       printf("\nVocê gostou ou não gostou do teatro\nS para gostou ou N para não gostou\n");
         scanf("%s",&opniao);
         if(opniao == 'S'){
             gostou++;
@@ -43,16 +44,14 @@ main(){
         scanf("%d",&idade);
         if(idade != 0){
             quantEspec++;
-        }
-         
+        }  
     }
     //faz os calculos que foram juntados com as informações dentro do while
-    porcentagemOpniao = (gostou / naoGostou) * quantEspec;
+    porcentagemOpniao = gostou * 100/ quantEspec;
     mediaIdade = somaIdade / quantEspec;
     //imprime as informações desejadas no enunciado
     printf("Quantidade de espectadores entrevistados: %d\n",quantEspec);
-    //Porcentagem ainda apresentando erro na logica, o calculo está errado
-    printf("Porcentagem de pessoas entrevistadas que gostaram da peça: %.2f\n",porcentagemOpniao);
+    printf("Porcentagem de pessoas entrevistadas que gostaram da peça: %.2f%%\n",porcentagemOpniao);
     printf("Quantidade de Mulheres entrevistadas: %d\nQuantidade de Homens entrevistados: %d\n", contF, contM);
     printf("A media de idade dos espectadores entrevistados: %d anos\n",mediaIdade);
 }
