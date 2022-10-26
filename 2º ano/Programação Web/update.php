@@ -1,33 +1,6 @@
 <?php
-
 include "config.php";
-
-if (isset($_POST['update'])) {
-  $id = $_GET['id'];
-  $estado = $_POST['estado'];
-  $sql = "UPDATE `estados` SET `Estado`='$estado' WHERE `id`='$id'";
-  $result = $conn->query($sql);
-  if ($result == TRUE) {
-
-    echo "Estado atualizado com sucesso.";
-  } else {
-
-    echo "Error:" . $sql . "<br>" . $conn->error;
-  }
-}
-
-if (isset($_GET['id'])) {
-
-  $id = $_GET['id'];
-
-  $sql = "SELECT * FROM `estados` WHERE `id`='$id'";
-
-  $result = $conn->query($sql);
-
-  if ($result->num_rows > 0) {
-    while ($row = $result->fetch_assoc()) {
-      $estado = $row['Estado'];
-    }
+include "./services/updateEstado.php";
 
 ?>
     <html>
@@ -44,6 +17,9 @@ if (isset($_GET['id'])) {
       <form action="" method="post">
         Estado:<br>
         <input type="text" name="estado" value="<?php echo $estado; ?>">
+        <br>
+        Sigla:<br>
+        <input type="text" name="sigla" value="<?php echo $sigla; ?>">
         <input type="hidden" name="id" value="<?php echo $id; ?>">
 
         <br><br>
@@ -54,13 +30,3 @@ if (isset($_GET['id'])) {
     </body>
 
     </html>
-
-<?php
-
-  } else {
-
-    header('Location: view.php');
-  }
-}
-
-?>

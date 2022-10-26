@@ -8,11 +8,13 @@
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand" href="#">Central de Estados</a>
+        <a class="navbar-brand" href="#">Home(fazer tela)</a>
       </div>
       <ul class="nav navbar-nav">
-        <li class=""><a href="estados.php">Home</a></li>
-        <li><a href="cadastraEstados.php">Cadastro</a></li>
+        <li class=""><a href="estados.php">visualização de Estados</a></li>
+        <li><a href="cadastraEstados.php">Cadastro de Estados</a></li>
+        <li class=""><a href="cidade.php">visualização de Cidades</a></li>
+        <li><a href="cadastraCidade.php">Cadastro de Cidades</a></li>
       </ul>
     </div>
   </nav>
