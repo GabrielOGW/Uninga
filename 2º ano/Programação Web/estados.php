@@ -34,8 +34,8 @@ $result = $conn->query($sql);
               <td><?php echo $row['Estado']; ?></td>
               <td><?php echo $row['Sigla']; ?></td>
               <td>
-                <a class="btn btn-info" href="update.php?id=<?php echo $row['id']; ?>">Editar</a>&nbsp;
-                <a class="btn btn-danger" href="delete.php?id=<?php echo $row['id']; ?>">Deletar</a>
+                <a class="btn btn-info" href="updateEstado.php?id=<?php echo $row['id']; ?>">Editar</a>&nbsp;
+                <a class="btn btn-danger" href="deleteEstado.php?id=<?php echo $row['id']; ?>">Deletar</a>
               </td>
 
             </tr>

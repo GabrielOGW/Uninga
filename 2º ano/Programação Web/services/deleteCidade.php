@@ -10,7 +10,7 @@ if (isset($_GET['id'])) {
 
      if ($result == TRUE) {
 
-        echo "Cidade deletado com sucesso.";
+        echo "Cidade deletada com sucesso.";
 
     }else{
 
