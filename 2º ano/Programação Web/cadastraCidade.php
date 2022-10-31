@@ -20,14 +20,14 @@ include "./services/createCidade.php";
     <input type="text" name="cidade">
     <br>
     Estado:<br>
-    <select name="sigla">
+    <select name="id-uf">
       <?php
-      $sql = "SELECT Sigla FROM estados";
+      $sql = "SELECT DISTINCT `cidade`.`id-uf`, `estados`.`Sigla` FROM `cidade` RIGHT JOIN `estados` ON `estados`.`id` = `cidade`.`id-uf`";
       $result = $conn->query($sql);
       if ($result->num_rows > 0) {
         while ($row = $result->fetch_assoc()) {
       ?>
-          <option value="<?php $row['Sigla'] ?>"> <?php echo $row['Sigla'] ?> </option>
+          <option value="<?php $row['id-uf'] ?>"> <?php echo $row['Sigla'] ?> </option>
       <?php
         }
       }
