@@ -2,10 +2,13 @@
 include "config.php";
 if (isset($_POST['submit'])) {
   $cidade = $_POST['cidade'];
-  $estado = $_POST['id-uf'];
-  $sql = "INSERT INTO `cidade`(`cidade`, `id-uf`) VALUES ('$cidade', '$estado')";
+  $uf = $_POST['id-uf'];
+  $sql = "INSERT INTO `cidade`(`cidade`, `id-uf`) VALUES ('$cidade', '$uf')";
+  
+  echo $sql;
 
   $result = $conn->query($sql);
+  
 
   if ($result == TRUE) {
 
