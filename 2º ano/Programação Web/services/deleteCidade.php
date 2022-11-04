@@ -6,6 +6,8 @@ if (isset($_GET['id'])) {
 
     $sql = "DELETE FROM `cidade` WHERE `id`='$id'";
 
+    echo $sql;
+    
      $result = $conn->query($sql);
 
      if ($result == TRUE) {
