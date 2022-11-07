@@ -4,9 +4,6 @@ include "./services/createCidade.php";
 ?>
 <!DOCTYPE html>
 <html>
-<header>
-  <?php include "navbar.php"; ?>
-</header>
 
 <head>
   <link rel="stylesheet" href="./stylesheet/form.css">
@@ -14,26 +11,21 @@ include "./services/createCidade.php";
   <title>Cadastro de Cidades</title>
 </head>
 
+<header>
+  <?php include "navbar.php"; ?>
+</header>
+
 <body>
   <h2>Cadastro de Cidades</h2>
-  <form action="cidade.php" method="POST">
+  <form action="" method="POST">
     Cidade:<br>
     <input type="text" name="cidade">
     <br>
     Estado:<br>
-    <select name="uf">
-      <?php
-      $sql = "SELECT DISTINCT `cidade`.`id-uf`, `estados`.`Sigla` FROM `cidade` RIGHT JOIN `estados` ON `estados`.`id` = `cidade`.`id-uf`";
-      $result = $conn->query($sql);
-      if ($result->num_rows > 0) {
-        while ($row = $result->fetch_assoc()) {
-      ?>
-          <option value="<?php echo $row['id-uf'] ?>"> <?php echo $row['Sigla'] ?> </option>
-      <?php
-        }
-      }
-      ?>
-    </select>
+    <?php
+    include "./views/cidade-estados.php";
+    ?>
+
     <br><br>
     <input type="submit" name="submit" value="submit">
   </form>

@@ -24,7 +24,7 @@ include "./services/updateEstado.php";
 
         <br><br>
 
-        <input type="submit" value="Update" name="update">
+        <input type="submit" value="Update" name="updateEstado">
       </form>
 
     </body>

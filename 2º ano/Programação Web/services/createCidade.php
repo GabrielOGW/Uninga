@@ -2,7 +2,7 @@
 include "config.php";
 if (isset($_POST['submit'])) {
   $cidade = $_POST['cidade'];
-  $uf = $_POST['uf'];
+  $uf = $_POST['id-uf'];
   $sql = "INSERT INTO `cidade`(`cidade`, `id-uf`) VALUES ('$cidade', '$uf')";
 
   $result = $conn->query($sql);
