@@ -11,10 +11,12 @@
         <a class="navbar-brand" href="#">Home(fazer tela)</a>
       </div>
       <ul class="nav navbar-nav">
-        <li class=""><a href="estados.php">visualização de Estados</a></li>
+        <li class=""><a href="estados.php">Estados</a></li>
         <li><a href="cadastraEstados.php">Cadastro de Estados</a></li>
-        <li class=""><a href="cidade.php">visualização de Cidades</a></li>
+        <li class=""><a href="cidade.php">Cidades</a></li>
         <li><a href="cadastraCidade.php">Cadastro de Cidades</a></li>
+        <li class=""><a href="pessoas.php">Pessoas</a></li>
+        <li><a href="cadastraPessoa.php">Cadastro de Pessoas</a></li>
       </ul>
     </div>
   </nav>

@@ -18,7 +18,7 @@ include "./services/createEstado.php";
 
 <body>
   <h2>Cadastro de Estados</h2>
-  <form action="estados.php" method="POST">
+  <form action="" method="POST">
     Estado:<br>
     <input type="text" name="estado">
     <br>
