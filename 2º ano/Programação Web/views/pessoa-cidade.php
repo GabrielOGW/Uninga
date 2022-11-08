@@ -1,5 +1,5 @@
 <?php
-$pessoa_cidade = "SELECT DISTINCT `pessoa`.`id`, `pessoa`.`nome`, `cidade`.`cidade`, `pessoa`.`ativo` FROM `pessoa` RIGHT JOIN `cidade` ON `pessoa`.`id-cidade` = `cidade`.`id`";
+$pessoa_cidade = "SELECT `cidade`.`id`, `cidade`.`cidade` FROM `cidade`";
 ?>
 <select name="id-cidade">
   <?php

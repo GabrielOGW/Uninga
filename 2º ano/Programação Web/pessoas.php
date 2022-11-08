@@ -23,6 +23,7 @@ $result = $conn->query($sql);
           <th>Nome</th>
           <th>Cidade</th>
           <th>Ativo</th>
+          <th><a class="btn btn-primary" href="cadastraPessoa.php">Cadastrar nova</a></th>
         </tr>
       </thead>
       <tbody>
@@ -36,8 +37,8 @@ $result = $conn->query($sql);
               <td><?php echo $row['cidade']; ?></td>
               <td><?php echo $row['ativo']; ?></td>
               <td>
-                <a class="btn btn-info" href=".php?id=<?php echo $row['id'], $row['nome']; ?>">Editar</a>&nbsp;
-                <a class="btn btn-danger" href=".php?id=<?php echo $row['id']; ?>">Deletar</a>
+                <a class="btn btn-info" href="updatePessoa.php?id=<?php echo $row['id'], $row['nome']; ?>">Editar</a>&nbsp;
+                <a class="btn btn-danger" href="deletePessoa.php?id=<?php echo $row['id']; ?>">Deletar</a>
               </td>
 
             </tr>

@@ -1,6 +1,6 @@
 <?php
 include "config.php";
-include "./services/createPessoa.php";
+include "./services/createContato.php";
 ?>
 <!DOCTYPE html>
 <html>
@@ -8,7 +8,7 @@ include "./services/createPessoa.php";
 <head>
   <link rel="stylesheet" href="./stylesheet/form.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <title>Cadastro de Pessoas</title>
+  <title>Cadastro de Contatos</title>
 </head>
 
 <header>
@@ -16,18 +16,20 @@ include "./services/createPessoa.php";
 </header>
 
 <body>
-  <h2>Cadastro de Pessoas</h2>
+  <h2>Cadastro de Contatos</h2>
   <form action="" method="POST">
     Nome:<br>
-    <input type="text" name="nome">
-    <br>
-    Cidade:<br>
     <?php
-    include "./views/pessoa-cidade.php";
+    include "./views/contato-pessoa.php";
     ?>
     <br>
-    Ativo:<br>
-    <input type="checkbox" name="ativo">
+    Tipo de Contato:<br>
+    <?php
+    include "./views/contato-tipo.php";
+    ?>
+    <br>
+    Endereço:<br>
+    <input type="text" name="endereço" required>
     <br><br>
     <input type="submit" name="submit" value="submit">
   </form>

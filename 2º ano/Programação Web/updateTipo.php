@@ -1,8 +1,8 @@
 <?php
 include "config.php";
-include "./services/updateEstado.php";
-
+include "./services/updateTipo.php";
 ?>
+
 <html>
 
 <head>
@@ -14,19 +14,13 @@ include "./services/updateEstado.php";
 </header>
 
 <body>
-
-  <h2>Atualizar estado</h2>
+  <h2>Atualizar Tipo de Contato</h2>
   <form action="" method="post">
-    Estado:<br>
-    <input type="text" name="estado" value="<?php echo $estado; ?>">
-    <br>
-    Sigla:<br>
-    <input type="text" name="sigla" value="<?php echo $sigla; ?>">
+    Tipo:<br>
+    <input type="text" name="tipo" value="<?php echo $tipo; ?>">
     <input type="hidden" name="id" value="<?php echo $id; ?>">
-
     <br><br>
-
-    <input type="submit" value="Update" name="updateEstado">
+    <input type="submit" value="Update" name="updateTipo">
   </form>
 
 </body>

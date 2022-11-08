@@ -7,7 +7,7 @@ if (isset($_POST['updateCidade'])) {
   $result = $conn->query($sql);
   if ($result == TRUE) {
 
-    echo "Estado atualizado com sucesso.";
+    echo "Cidade atualizado com sucesso.";
   } else {
 
     echo "Error:" . $sql . "<br>" . $conn->error;

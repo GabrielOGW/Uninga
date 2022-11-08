@@ -1,6 +1,6 @@
 <?php 
 include "config.php";
-$sql = "SELECT * FROM estados";
+$sql = "SELECT * FROM tipo";
 $result = $conn->query($sql);
 ?>
 
@@ -8,21 +8,20 @@ $result = $conn->query($sql);
 <html>
 <head>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<title>Estados</title>
+<title>Tipos de Contato</title>
 </head>
 <header>
   <?php include "navbar.php"; ?>
 </header>
 <body>
   <div class="container">
-    <h2>Estados</h2>
+    <h2>Tipos de Contato</h2>
     <table class="table">
       <thead>
         <tr>
           <th>ID</th>
-          <th>Estados</th>
-          <th>Sigla</th>
-          <th><a class="btn btn-primary" href="cadastraEstados.php">Cadastrar novo</a></th>
+          <th>Tipo de contato</th>
+          <th><a class="btn btn-primary" href="cadastraTipo.php">Cadastrar novo</a></th>
         </tr>
       </thead>
       <tbody>
@@ -32,15 +31,12 @@ $result = $conn->query($sql);
         ?>
             <tr>
               <td><?php echo $row['id']; ?></td>
-              <td><?php echo $row['Estado']; ?></td>
-              <td><?php echo $row['Sigla']; ?></td>
+              <td><?php echo $row['tipo']; ?></td>
               <td>
-                <a class="btn btn-info" href="updateEstado.php?id=<?php echo $row['id']; ?>">Editar</a>&nbsp;
-                <a class="btn btn-danger" href="deleteEstado.php?id=<?php echo $row['id']; ?>">Deletar</a>
+                <a class="btn btn-info" href="updateTipo.php?id=<?php echo $row['id']; ?>">Editar</a>&nbsp;
+                <a class="btn btn-danger" href="deleteTipo.php?id=<?php echo $row['id']; ?>">Deletar</a>
               </td>
-
             </tr>
-
         <?php       }
         }
         ?>

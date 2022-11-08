@@ -22,6 +22,7 @@ $result = $conn->query($sql);
           <th>ID</th>
           <th>Cidade</th>
           <th>Estado</th>
+          <th><a class="btn btn-primary" href="cadastraCidade.php">Cadastrar nova</a></th>
         </tr>
       </thead>
       <tbody>
