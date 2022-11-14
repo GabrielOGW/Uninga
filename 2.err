@@ -173,3 +173,84 @@
 2022-11-11T11:17:14.413841Z 0 [Warning] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
 2022-11-11T11:17:14.416878Z 0 [ERROR] Cannot open Windows EventLog; check privileges, or start server with --log_syslog=0
 2022-11-11T11:17:14.416878Z 0 [Note] C:\laragon\bin\mysql\mysql-5.7.18-winx64\bin\mysqld (mysqld 5.7.18) starting as process 4120 ...
+2022-11-14T11:27:40.958257Z 0 [Warning] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2022-11-14T11:27:41.016271Z 0 [ERROR] Cannot open Windows EventLog; check privileges, or start server with --log_syslog=0
+2022-11-14T11:27:41.016271Z 0 [Note] C:\laragon\bin\mysql\mysql-5.7.18-winx64\bin\mysqld (mysqld 5.7.18) starting as process 9068 ...
+2022-11-14T11:27:50.235262Z 0 [Warning] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2022-11-14T11:27:50.236266Z 0 [ERROR] Cannot open Windows EventLog; check privileges, or start server with --log_syslog=0
+2022-11-14T11:27:50.236266Z 0 [Note] C:\laragon\bin\mysql\mysql-5.7.18-winx64\bin\mysqld (mysqld 5.7.18) starting as process 8856 ...
+2022-11-14T11:27:50.287262Z 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2022-11-14T11:27:50.288260Z 0 [Note] InnoDB: Uses event mutexes
+2022-11-14T11:27:50.289266Z 0 [Note] InnoDB: _mm_lfence() and _mm_sfence() are used for memory barrier
+2022-11-14T11:27:50.289266Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2022-11-14T11:27:50.291270Z 0 [Note] InnoDB: Number of pools: 1
+2022-11-14T11:27:50.292260Z 0 [Note] InnoDB: Not using CPU crc32 instructions
+2022-11-14T11:27:50.311269Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2022-11-14T11:27:50.327263Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2022-11-14T11:27:50.450261Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2022-11-14T11:27:50.798261Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2022-11-14T11:27:50.805263Z 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2022-11-14T11:27:50.861263Z 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2022-11-14T11:27:50.876261Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2022-11-14T11:27:50.877264Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2022-11-14T11:27:50.878259Z 0 [Note] InnoDB: Waiting for purge to start
+2022-11-14T11:27:50.933289Z 0 [Note] InnoDB: 5.7.18 started; log sequence number 2535653
+2022-11-14T11:27:50.934260Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2022-11-14T11:27:50.934260Z 0 [Note] InnoDB: Loading buffer pool(s) from C:\Users\gabriel.ogassawara\Desktop\Estudos\Uninga\2 ano\web\mysql\ib_buffer_pool
+2022-11-14T11:27:50.951263Z 0 [ERROR] Too many arguments (first extra is 'ano\web\mysql\mysqld.log').
+2022-11-14T11:27:50.952261Z 0 [Note] Use --verbose --help to get a list of available options!
+2022-11-14T11:27:50.951263Z 0 [Note] InnoDB: Buffer pool(s) load completed at 221114  8:27:50
+2022-11-14T11:27:50.953266Z 0 [ERROR] Aborting
+
+2022-11-14T11:27:50.954262Z 0 [Note] Binlog end
+2022-11-14T11:27:50.954262Z 0 [Note] Shutting down plugin 'ngram'
+2022-11-14T11:27:50.955281Z 0 [Note] Shutting down plugin 'partition'
+2022-11-14T11:27:50.955281Z 0 [Note] Shutting down plugin 'BLACKHOLE'
+2022-11-14T11:27:50.956261Z 0 [Note] Shutting down plugin 'ARCHIVE'
+2022-11-14T11:27:50.956261Z 0 [Note] Shutting down plugin 'PERFORMANCE_SCHEMA'
+2022-11-14T11:27:50.957262Z 0 [Note] Shutting down plugin 'MRG_MYISAM'
+2022-11-14T11:27:50.957262Z 0 [Note] Shutting down plugin 'MyISAM'
+2022-11-14T11:27:50.958262Z 0 [Note] Shutting down plugin 'INNODB_SYS_VIRTUAL'
+2022-11-14T11:27:50.958262Z 0 [Note] Shutting down plugin 'INNODB_SYS_DATAFILES'
+2022-11-14T11:27:50.959258Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESPACES'
+2022-11-14T11:27:50.960259Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN_COLS'
+2022-11-14T11:27:50.960259Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN'
+2022-11-14T11:27:50.961260Z 0 [Note] Shutting down plugin 'INNODB_SYS_FIELDS'
+2022-11-14T11:27:50.962260Z 0 [Note] Shutting down plugin 'INNODB_SYS_COLUMNS'
+2022-11-14T11:27:50.962260Z 0 [Note] Shutting down plugin 'INNODB_SYS_INDEXES'
+2022-11-14T11:27:50.963265Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESTATS'
+2022-11-14T11:27:50.965260Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLES'
+2022-11-14T11:27:50.965260Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_TABLE'
+2022-11-14T11:27:50.966264Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_CACHE'
+2022-11-14T11:27:50.967262Z 0 [Note] Shutting down plugin 'INNODB_FT_CONFIG'
+2022-11-14T11:27:50.968262Z 0 [Note] Shutting down plugin 'INNODB_FT_BEING_DELETED'
+2022-11-14T11:27:50.968262Z 0 [Note] Shutting down plugin 'INNODB_FT_DELETED'
+2022-11-14T11:27:50.970263Z 0 [Note] Shutting down plugin 'INNODB_FT_DEFAULT_STOPWORD'
+2022-11-14T11:27:50.970263Z 0 [Note] Shutting down plugin 'INNODB_METRICS'
+2022-11-14T11:27:50.971261Z 0 [Note] Shutting down plugin 'INNODB_TEMP_TABLE_INFO'
+2022-11-14T11:27:50.971261Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_POOL_STATS'
+2022-11-14T11:27:50.972262Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE_LRU'
+2022-11-14T11:27:50.973260Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE'
+2022-11-14T11:27:50.973260Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX_RESET'
+2022-11-14T11:27:50.974264Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX'
+2022-11-14T11:27:50.974264Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM_RESET'
+2022-11-14T11:27:50.975282Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM'
+2022-11-14T11:27:50.976267Z 0 [Note] Shutting down plugin 'INNODB_CMP_RESET'
+2022-11-14T11:27:50.976267Z 0 [Note] Shutting down plugin 'INNODB_CMP'
+2022-11-14T11:27:50.977264Z 0 [Note] Shutting down plugin 'INNODB_LOCK_WAITS'
+2022-11-14T11:27:50.977264Z 0 [Note] Shutting down plugin 'INNODB_LOCKS'
+2022-11-14T11:27:50.978262Z 0 [Note] Shutting down plugin 'INNODB_TRX'
+2022-11-14T11:27:50.978262Z 0 [Note] Shutting down plugin 'InnoDB'
+2022-11-14T11:27:50.979261Z 0 [Note] InnoDB: FTS optimize thread exiting.
+2022-11-14T11:27:50.981264Z 0 [Note] InnoDB: Starting shutdown...
+2022-11-14T11:27:51.087266Z 0 [Note] InnoDB: Dumping buffer pool(s) to C:\Users\gabriel.ogassawara\Desktop\Estudos\Uninga\2 ano\web\mysql\ib_buffer_pool
+2022-11-14T11:27:51.113261Z 0 [Note] InnoDB: Buffer pool(s) dump completed at 221114  8:27:51
+2022-11-14T11:27:52.493265Z 0 [Note] InnoDB: Shutdown completed; log sequence number 2535672
+2022-11-14T11:27:52.500275Z 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2022-11-14T11:27:52.501263Z 0 [Note] Shutting down plugin 'MEMORY'
+2022-11-14T11:27:52.502268Z 0 [Note] Shutting down plugin 'CSV'
+2022-11-14T11:27:52.502268Z 0 [Note] Shutting down plugin 'sha256_password'
+2022-11-14T11:27:52.503261Z 0 [Note] Shutting down plugin 'mysql_native_password'
+2022-11-14T11:27:52.504264Z 0 [Note] Shutting down plugin 'binlog'
+2022-11-14T11:27:52.513261Z 0 [Note] C:\laragon\bin\mysql\mysql-5.7.18-winx64\bin\mysqld: Shutdown complete
+

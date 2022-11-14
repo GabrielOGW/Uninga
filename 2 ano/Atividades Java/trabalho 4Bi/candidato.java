@@ -8,14 +8,14 @@ public class candidato {
     return porcentagem;
   }
 
-  String verificaVencedor(int notaX, int notaY, int notaZ, int notaW) {
-    if (notaX > notaY && notaX > notaZ && notaX > notaW) {
+  String verificaVencedor(int VotoX, int VotoY, int VotoZ, int VotoW) {
+    if (VotoX > VotoY && VotoX > VotoZ && VotoX > VotoW) {
       return "candidato X venceu!";
-    } else if (notaY > notaX && notaY > notaZ && notaY > notaW) {
+    } else if (VotoY > VotoX && VotoY > VotoZ && VotoY > VotoW) {
       return "candidato Y venceu!";
-    } else if (notaZ > notaX && notaZ > notaY && notaZ > notaW) {
+    } else if (VotoZ > VotoX && VotoZ > VotoY && VotoZ > VotoW) {
       return "candidato Z venceu!";
-    } else if (notaW > notaX && notaW > notaZ && notaW > notaZ) {
+    } else if (VotoW > VotoX && VotoW > VotoZ && VotoW > VotoZ) {
       return "candidato Z venceu!";
     }
     return "";

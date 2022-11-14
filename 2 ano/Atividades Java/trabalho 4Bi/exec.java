@@ -27,7 +27,6 @@ public class exec {
         if (confirm != JOptionPane.YES_OPTION) {
           i--;
         }
-
       }
 
       switch (voto) {
