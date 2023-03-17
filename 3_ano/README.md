@@ -1,1 +1,1 @@
-testando alguns controles de versi'osamento em git
+Pasta para publicar os estudos realizados durante o 3º ano de Analise e Desenvolvimento de Sistemass
