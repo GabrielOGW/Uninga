@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Formulário com Vue</title>
+    <script src="http://unpkg.com/vue@next"></script>
+    <style>
+      .cor-alternada {
+        background-color: lightgray;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <form>
+        <label>
+          Adicionar item:
+          <input
+            v-model="novoItem"
+            @keydown.enter.prevent="adicionarItem"
+            type="text"
+          />
+        </label>
+      </form>
+      <ul v-bind:class="{ 'cor-alternada': corAlternada }">
+        <li v-for="(item, index) in lista" :key="index">{{ item }}</li>
+      </ul>
+      <label>
+        <input v-model="corAlternada" type="checkbox" />
+        Alterar cor de fundo do item adicionado
+      </label>
+    </div>
+    <script src="./meuScript.js"></script>
+  </body>
+</html>
