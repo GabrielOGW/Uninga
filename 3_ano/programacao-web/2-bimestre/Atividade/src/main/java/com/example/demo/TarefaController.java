@@ -9,11 +9,11 @@ import java.util.List;
 public class TarefaController {
 
     private List<Tarefa> tarefas = new ArrayList<>();
-    private int proximoId = 1;
+    private int proximoId = 0;
 
     @PostMapping("/tarefas")
     public Tarefa adicionarTarefa(@RequestBody Tarefa tarefa) {
-        tarefa.setId(proximoId++);
+        tarefa.setId(proximoId);
         tarefas.add(tarefa);
         return tarefa;
     }

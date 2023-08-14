@@ -7,7 +7,7 @@ public class Tarefa {
   private boolean concluida;
 
   public Tarefa(String descricao, boolean concluida) {
-    this.id = proximoId++;
+    this.id = proximoId;
     this.descricao = descricao;
     this.concluida = concluida;
   }
